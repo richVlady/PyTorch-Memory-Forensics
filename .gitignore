@@ -2,3 +2,6 @@
 MemoryForensics Writeup.pdf
 ml_forensics/lime_dump/
 ml_forensics/venv/
+build/
+__pycache__/
+*.pyc
