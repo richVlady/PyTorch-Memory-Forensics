@@ -386,7 +386,7 @@ This proves that our entire workflow holds up from start to finish:
 4. **Binary Validation:** Loading the extracted `.npy` files confirmed an exact match with the floating-point values residing in the target process.
 
 ## Wrapping Up
-And there we have it! We successfully dumped a proprietary machine learning model out of a live C++ production environment. By manually mapping out the `c10::ivalue::Object`, `c10::TensorImpl`, and `c10::StorageImpl` hierarchies in GDB, we were able to write a custom Volatility 3 plugin that bypasses ASLR, recovers the network topology (the forward-pass code), and carves out the exact tensor weights—all without needing debug symbols or the original application source code. Hopefully, this step-by-step guide helps you in your own memory forensics journey!
+ We successfully dumped a machine learning model out of a live C++ production environment. By manually mapping out the `c10::ivalue::Object`, `c10::TensorImpl`, and `c10::StorageImpl` hierarchies in GDB, we were able to write a custom Volatility plugin that bypasses ASLR, recovers the network topology (the forward-pass code), and carves out the exact tensor weights—all without needing debug symbols or the original application source code. 
 
 > **AI Assistance Disclaimer:**
 > *This project was developed with the assistance of AI models, including Google Gemini and Anthropic Claude. These tools were used to help draft this README, write and refine the codebase, analyze the forensic memory results, and serve as educational aids in understanding the LibTorch memory structures and Volatility.*
