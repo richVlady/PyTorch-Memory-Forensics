@@ -5,3 +5,5 @@ ml_forensics/venv/
 build/
 __pycache__/
 *.pyc
+data/
+LiME/
