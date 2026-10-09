@@ -1,0 +1,141 @@
+{
+  "root": "0x555558a33b20",
+  "layers": [
+    {
+      "path": "module",
+      "type": "__torch__.Net",
+      "shape": "",
+      "object": "0x555558a33b20",
+      "data": null,
+      "bytes": 0
+    },
+    {
+      "path": "module.conv1",
+      "type": "__torch__.torch.nn.modules.conv.Conv2d",
+      "shape": "",
+      "object": "0x555558a34be0",
+      "data": null,
+      "bytes": 0
+    },
+    {
+      "path": "module.conv1.weight",
+      "type": "parameter tensor",
+      "shape": "[6, 3, 5, 5]",
+      "object": "0x555558a2af80",
+      "data": "0x555558a0f200",
+      "bytes": 1800
+    },
+    {
+      "path": "module.conv1.bias",
+      "type": "parameter tensor",
+      "shape": "[6]",
+      "object": "0x555558a1f980",
+      "data": "0x555558a31340",
+      "bytes": 24
+    },
+    {
+      "path": "module.pool",
+      "type": "__torch__.torch.nn.modules.pooling.MaxPool2d",
+      "shape": "",
+      "object": "0x555558a34550",
+      "data": null,
+      "bytes": 0
+    },
+    {
+      "path": "module.conv2",
+      "type": "__torch__.torch.nn.modules.conv.___torch_mangle_0.Conv2d",
+      "shape": "",
+      "object": "0x555558a32740",
+      "data": null,
+      "bytes": 0
+    },
+    {
+      "path": "module.conv2.weight",
+      "type": "parameter tensor",
+      "shape": "[16, 6, 5, 5]",
+      "object": "0x5555589c1740",
+      "data": "0x555558a04480",
+      "bytes": 9600
+    },
+    {
+      "path": "module.conv2.bias",
+      "type": "parameter tensor",
+      "shape": "[16]",
+      "object": "0x555558a32410",
+      "data": "0x555558a00240",
+      "bytes": 64
+    },
+    {
+      "path": "module.fc1",
+      "type": "__torch__.torch.nn.modules.linear.Linear",
+      "shape": "",
+      "object": "0x555558a1ef70",
+      "data": null,
+      "bytes": 0
+    },
+    {
+      "path": "module.fc1.weight",
+      "type": "parameter tensor",
+      "shape": "[120, 400]",
+      "object": "0x555558a2c440",
+      "data": "0x555558a36980",
+      "bytes": 192000
+    },
+    {
+      "path": "module.fc1.bias",
+      "type": "parameter tensor",
+      "shape": "[120]",
+      "object": "0x555558a33200",
+      "data": "0x555558a1fc80",
+      "bytes": 480
+    },
+    {
+      "path": "module.fc2",
+      "type": "__torch__.torch.nn.modules.linear.___torch_mangle_1.Linear",
+      "shape": "",
+      "object": "0x555558a14670",
+      "data": null,
+      "bytes": 0
+    },
+    {
+      "path": "module.fc2.weight",
+      "type": "parameter tensor",
+      "shape": "[84, 120]",
+      "object": "0x555558a1d540",
+      "data": "0x555558a65800",
+      "bytes": 40320
+    },
+    {
+      "path": "module.fc2.bias",
+      "type": "parameter tensor",
+      "shape": "[84]",
+      "object": "0x555558a2a8d0",
+      "data": "0x555558a30980",
+      "bytes": 336
+    },
+    {
+      "path": "module.fc3",
+      "type": "__torch__.torch.nn.modules.linear.___torch_mangle_2.Linear",
+      "shape": "",
+      "object": "0x555558a2fcd0",
+      "data": null,
+      "bytes": 0
+    },
+    {
+      "path": "module.fc3.weight",
+      "type": "parameter tensor",
+      "shape": "[10, 84]",
+      "object": "0x555558a35540",
+      "data": "0x555558a06a80",
+      "bytes": 3360
+    },
+    {
+      "path": "module.fc3.bias",
+      "type": "parameter tensor",
+      "shape": "[10]",
+      "object": "0x555558a339b0",
+      "data": "0x5555589bfb80",
+      "bytes": 40
+    }
+  ]
+}
