@@ -379,14 +379,14 @@ First 5 weights: [-0.00444644  0.01641797 -0.04247967 -0.10649204 -0.16449124]
 </p>
 
 ### Ground Truth Validation
-While the standalone verification above confirms we extracted valid tensors, we can go one step further to definitively prove the scientific accuracy of our extraction. Because we trained the original PyTorch model in Step 1, we possess the "Ground Truth". By loading the original `models/cifar10_custom_cnn.pt` file and comparing it directly to the `.npy` files carved from the memory dump, we can verify if the memory forensics recovered the exact proprietary network. 
+While the verification above confirms we extracted valid tensors, we can go one step further to prove the scientific accuracy of our extraction. Because we trained the original PyTorch model in Step 1, we possess the "Ground Truth". By loading the original `models/cifar10_custom_cnn.pt` file and comparing it directly to the `.npy` files carved from the memory dump, we can verify if the memory forensics recovered the exact network. 
 
 Running our custom validation script iterates through every extracted `.npy` tensor and compares it byte-for-byte against the original PyTorch model layers:
 
 <p align="center">
   <img src="images/ground_truth.png" alt="Ground Truth Validation">
   <br>
-  <em>A full validation scan cross-referencing every carved tensor against the original PyTorch model, proving a 100% exact extraction of the entire architecture.</em>
+  <em>A full validation scan cross-referencing every carved tensor against the original PyTorch model.</em>
 </p>
 
 #### End-to-End Forensic Integrity
